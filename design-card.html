@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* background-color: darkolivegreen; */
+        }
+
+        .card-container {
+            height: 700px;
+            background-color: darkgrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 400px;
+            box-sizing: border-box;
+            box-shadow: 1px 2px 4px rgb(12, 5, 5);
+            padding: 10px;
+            background-color: hotpink;
+            margin: 20px;
+            border-radius: 20px;
+
+        }
+
+        .card:hover {
+            box-shadow: 6px 12px 10px rgb(161, 209, 209);
+        }
+
+        .card-img {}
+
+        .card .card-img img {
+            width: 100%;
+            border-radius: 10px;
+
+        }
+
+
+        .card-body {
+            background-color: rgba(0, 139, 139, 0.678);
+            border-radius: 10px;
+        }
+
+        .card-body .card-title h1 {
+            font-size: 2em;
+            color: white;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .card-body .card-title h2 {
+            font-size: 1.5em;
+            color: blueviolet;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card-body .card-info p {
+            text-align: justify;
+            font-size: 1.4em;
+            padding: 5px;
+            color: whitesmoke
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-img">
+                <img src="images/sjal.jpg" alt="Sajal">
+            </div>
+            <div class="card-body">
+                <div class="card-title">
+                    <h1>Md Sajal Hossain</h1>
+                    <h2>Web Design and Development Expart</h2>
+                </div>
+                <div class="card-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sed quia odio fugit obcaecati
+                        minima facere explicabo suscipit, ea voluptatem velit laudantium dicta numquam aliquid eos
+                        provident
+                        harum impedit inventore.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="images/sjal.jpg" alt="Sajal">
+            </div>
+            <div class="card-body">
+                <div class="card-title">
+                    <h1>Md Sajal Hossain</h1>
+                    <h2>Web Design and Development Expart</h2>
+                </div>
+                <div class="card-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sed quia odio fugit obcaecati
+                        minima facere explicabo suscipit, ea voluptatem velit laudantium dicta numquam aliquid eos
+                        provident
+                        harum impedit inventore.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img src="images/sjal.jpg" alt="Sajal">
+            </div>
+            <div class="card-body">
+                <div class="card-title">
+                    <h1>Md Sajal Hossain</h1>
+                    <h2>Web Design and Development Expart</h2>
+                </div>
+                <div class="card-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sed quia odio fugit obcaecati
+                        minima facere explicabo suscipit, ea voluptatem velit laudantium dicta numquam aliquid eos
+                        provident
+                        harum impedit inventore.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

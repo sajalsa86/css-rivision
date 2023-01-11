@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        h1 {
+            color: green !important;
+        }
+
+        #heading-id {
+            color: crimson;
+        }
+
+        .heading-color {
+            color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>the quality of belonging or relating uniquely to a particular subject.
+        "the statement of special educational needs lacked specificity"</h2>
+    <h1 class="heading-color">my hedding number - 1</h1>
+    <h1 class="heading-color">my hedding number - 2</h1>
+    <h1 id="heading-id" class="heading-color" style="color: cyan;">my hedding number - 3</h1>
+    <h1 id="heading-id" class="heading-color">my hedding number - 4</h1>
+</body>
+
+</html>

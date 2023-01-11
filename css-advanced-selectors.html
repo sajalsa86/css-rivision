@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css advanced selectors</title>
+    <style>
+        #sidebar h2 {
+
+            /* background-image: linear-gradient(red, yellow); */
+            background-image: linear-gradient(hotpink, blue);
+            padding: 10px;
+            border-style: groove;
+            border-width: 10px;
+            box-shadow: 10px 10px 40px green;
+            margin-top: 50px;
+        }
+
+        h2.title {
+            width: 500px;
+            height: 300px;
+            background-image: linear-gradient(to right, red, green);
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: overline;
+            text-shadow: 5px 5px 10px purple;
+            font-size: 2em;
+            color: darkorange;
+        }
+
+        h1,
+        p {
+            width: 500px;
+            height: 300px;
+            background-image: linear-gradient(red, green, hotpink);
+        }
+
+        #sidebar p::first-letter {
+            font-size: 4em;
+
+        }
+
+        #sidebar p::first-line {
+            color: darkgrey;
+
+        }
+
+        input[type="text"] {
+            width: 200px;
+            height: 200px;
+            background-image: repeating-linear-gradient(red, green 10%, hotpink 20%);
+        }
+
+        input[type="button"] {
+            width: 200px;
+            height: 100px;
+            border-radius: 50%;
+            border-width: 15px;
+            border-style: groove;
+            border-color: hotpink;
+            margin-left: 50px;
+        }
+
+        div#aside>h2 {
+            font-size: 3em;
+            font-weight: 700;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            font-variant: small-caps;
+        }
+
+        body>div>div blockquote {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar">
+        <h2 class="title">css advanced selectors -1</h2>
+        <h2>css advanced selectors -2</h2>
+        <h2>css advanced selectors -3</h2>
+        <h2 class="title">css advanced selectors -4</h2>
+        <h2>css advanced selectors -5</h2>
+        <h2>css advanced selectors -6</h2>
+        <h2>css advanced selectors -7</h2>
+        <h2>css advanced selectors -8</h2>
+        <h2 class="title">css advanced selectors -9</h2>
+        <h2>css advanced selectors -10</h2>
+        <p class="title">It’s important to have at least a basic understanding of how specificity works, but tools like
+            Firebug are useful to let
+            us know which selector is being applied to a particular element by listing all the CSS selectors in order of
+            their
+            specificity when you are inspecting an element.</p>
+    </div>
+    <div id="aside">
+        <h2>css advanced selectors -7</h2>
+    </div>
+    <h2>css advanced selectors -7</h2>
+
+
+    <h1>css advanced selectors -1</h1>
+    <p>css advanced selectors -1</p>
+
+    <input type="text" name="" id="">
+    <input type="button" value=" click hehe">
+
+
+</body>
+
+</html>

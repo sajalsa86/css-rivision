@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --heading-color: rgb(235, 184, 16);
+            --comon-background-color: hotpink;
+            --main-font-size: 40px;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            font-size: var(--main-font-size);
+        }
+
+        p {
+            background-color: var(--comon-background-color);
+
+            font-size: var(--main-font-size);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Custom properties (--*): CSS variables</h1>
+        <p>Property names that are prefixed with --, like --example-name, represent custom properties that contain a
+            value that can
+            be used in other declarations using the var() function.
+
+            Custom properties are scoped to the element(s) they are declared on, and participate in the cascade: the
+            value of such a
+            custom property is that from the declaration decided by the cascading algorithm.</p>
+    </header>
+</body>
+
+</html>

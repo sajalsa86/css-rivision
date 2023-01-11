@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+</head>
+<style>
+    .item-1 {
+        grid-area: header;
+    }
+
+    .item-2 {
+        grid-area: menu;
+    }
+
+    .item-3 {
+        grid-area: main;
+    }
+
+    .item-4 {
+        grid-area: aside;
+    }
+
+    .item-5 {
+        grid-area: footer;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'menu main main main main aside'
+            'menu footer footer footer footer aside'
+        ;
+        grid-gap: 10px 15px;
+        background-color: cadetblue;
+    }
+
+    .comon-style {
+        border: 1px solid red;
+        background-image: linear-gradient(to top, pink, hotpink);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 2em;
+        text-align: center;
+        box-shadow: 1px 2px 2px gray;
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <div class="item-1 comon-style">HEADER</div>
+        <div class="item-2 comon-style">MENU</div>
+        <div class="item-3 comon-style">MAIN</div>
+        <div class="item-4 comon-style">ASIDE</div>
+        <div class="item-5 comon-style">FOOTER</div>
+    </div>
+</body>
+
+</html>
