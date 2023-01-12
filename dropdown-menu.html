@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu diffrent way</title>
+    <style>
+        header {
+            width: 80%;
+            height: 150px;
+            background-image: linear-gradient(to top, pink, lightblue);
+            margin: 0 auto;
+            border-radius: 12px;
+            /* nav section center korsi display use kore */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            width: 80%;
+            height: 60px;
+            background-color: darkgoldenrod;
+            border-radius: 12px;
+            /* nav a center korsi display use kore */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-right: 30px;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: white;
+
+        }
+
+        nav a:hover {
+            background-color: grey;
+
+        }
+
+        .contact-me-container {
+            display: inline;
+            position: relative;
+        }
+
+        .contact-me-contain {
+            position: absolute;
+            top: 20px;
+            right: 0;
+            background-color: darkgoldenrod;
+            text-align: left;
+            min-width: 100px;
+            display: none;
+        }
+
+        .contact-me-contain a {
+            display: block;
+
+        }
+
+        .contact-me-container:hover .contact-me-contain {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="" target="_blank">Home</a>
+            <a href="" target="_blank">About</a>
+
+            <div class="contact-me-container">
+                <a href="" target="_blank">Contact me</a>
+                <div class="contact-me-contain">
+                    <a href="" target="_blank">Item -1</a>
+                    <a href="" target="_blank">Item -2</a>
+                    <a href="" target="_blank">Item -3</a>
+                </div>
+            </div>
+
+            <a href="" target="_blank">Service</a>
+            <a href="" target="_blank">Tutorial</a>
+            <a href="" target="_blank">Other</a>
+        </nav>
+    </header>
+</body>
+
+</html>

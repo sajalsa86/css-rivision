@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Center</title>
+    <style>
+        main {
+            width: 80%;
+            height: 500px;
+            /* margin 0 auto use kore main section center kora hoise */
+            margin: 0 auto;
+            background-image: radial-gradient(pink, hotpink, salmon, lightgreen);
+            box-shadow: 5px 5px 5px gray;
+            border-radius: 25%;
+            /* article section center kora hoise display flex use kore */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .article {
+            width: 500px;
+            height: 400px;
+            /* margin: 0 auto; */
+            background-color: lightpink;
+            border-radius: 20px;
+            box-shadow: 10px 10px 40px rgb(103, 112, 90);
+            /* h2 element k position set korar jonno position relative use korsi */
+            position: relative;
+        }
+
+        .article h2 {
+            text-align: center;
+            width: 350px;
+            /* margin: 0 auto; */
+            /* position use kore top left set kore h2 center korsi
+             */
+            position: absolute;
+            top: 110px;
+            left: 60px;
+            background-color: black;
+            color: rgb(237, 243, 243);
+            border-radius: 20px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            text-shadow: 5px 2px 5px rgb(126, 26, 26);
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="article">
+            <h2>Css Center</h2>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus provident optio, ipsum suscipit
+                assumenda
+                sit odio similique iure impedit iste explicabo molestias quia sed earum maxime veniam quaerat fugiat
+                perferendis.</p> -->
+        </div>
+    </main>
+</body>
+
+</html>
